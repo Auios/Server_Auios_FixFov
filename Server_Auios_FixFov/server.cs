@@ -60,7 +60,7 @@ package Auios_FixFov
 	function serverCmdToggleZoom(%cl, %playerName)
 	{
 		//Make sure the client is an admin
-		if(%client.isAdmin || %client.isSuperAdmin || %client.isLocalConnection() || $Server::LAN || getNumKeyID() == %client.getBLID())
+		if(%cl.isAdmin || %cl.isSuperAdmin || %cl.isLocalConnection() || $Server::LAN || getNumKeyID() == %cl.getBLID())
 		{
 			if(%playerName $= "")
 			{
